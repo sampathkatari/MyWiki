@@ -8,3 +8,7 @@
  - <b>git branch</b> - Lists out the current branches available. -a option will list out the remote branches as well. Giving a name will actually create a branch. Usage : git branch -a 
  - <b>git checkout</b> - Will checkout a different branch in local by updating index, working tree and head to point new branch. Usage : git checkout {branch-name}
  - <b>git push</b> - Pushes all commited changes to remote branch. Usage : git push -u origin master
+ - <b>git stash</b> - For stashing the current workspace changes. Usage : git stash. To be used when user want to checkout another branch and save the current changes somewhere else instead of commiting to the branch.
+ - <b>git stash list</b> - Lists out all the stashes recorded. Usage : git stash list
+ - <b>git stash apply</b> - For applying the stashed changes to the current branch. Usage : git stash apply {stash-name}. stash-name will be something like stash@{0}. Stashed changes will be applied to current active branch, so make sure you checkout or move to the branch where you want your stashed changes to be applied.
+ - <b>git tag</b> - For tagging with a specific version on a particular commit id. Usage : git tag -a {tag-ver} -m {message}
