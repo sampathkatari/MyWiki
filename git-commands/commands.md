@@ -1,1 +1,14 @@
-List of Git Commands
+<h3>Useful git commands</h3>
+ - <b>git init </b> - For initializing git repository by creating a .git folder in the current directory where you run this command. You have to navigate to the directory where you want to initialize the git and then runt this command. Generally used when you start creating a new project.
+ - <b>git clone </b> - For copying an exisiting project from remote to your local git repository. Usage : git clone {remote source url}
+ - <b>git status</b> - Shows the untracked/changed files. Usage : git status
+ - <b>git add </b> - For adding untracked/changed files to git index. Usage : git add {filename}
+ - <b>git rm </b> - Remove the files from git index so they are not tracked. Usage : git rm {filename}
+ - <b>git commit</b> - Commits all the changes that are added to index. Usage : git commit -m 'commit message'
+ - <b>git branch</b> - Lists out the current branches available. -a option will list out the remote branches as well. Giving a name will actually create a branch. Usage : git branch -a 
+ - <b>git checkout</b> - Will checkout a different branch in local by updating index, working tree and head to point new branch. Usage : git checkout {branch-name}
+ - <b>git push</b> - Pushes all commited changes to remote branch. Usage : git push -u origin master
+ - <b>git stash</b> - For stashing the current workspace changes. Usage : git stash. To be used when user want to checkout another branch and save the current changes somewhere else instead of commiting to the branch.
+ - <b>git stash list</b> - Lists out all the stashes recorded. Usage : git stash list
+ - <b>git stash apply</b> - For applying the stashed changes to the current branch. Usage : git stash apply {stash-name}. stash-name will be something like stash@{0}. Stashed changes will be applied to current active branch, so make sure you checkout or move to the branch where you want your stashed changes to be applied.
+ - <b>git tag</b> - For tagging with a specific version on a particular commit id. Usage : git tag -a {tag-ver} -m {message}
