@@ -12,3 +12,4 @@
  - <b>git stash list</b> - Lists out all the stashes recorded. Usage : git stash list
  - <b>git stash apply</b> - For applying the stashed changes to the current branch. Usage : git stash apply {stash-name}. stash-name will be something like stash@{0}. Stashed changes will be applied to current active branch, so make sure you checkout or move to the branch where you want your stashed changes to be applied.
  - <b>git tag</b> - For tagging with a specific version on a particular commit id. Usage : git tag -a {tag-ver} -m {message}
+ - <b>git commit --amend</b> - For changing the name of the commit within local before pushing to remote. 
