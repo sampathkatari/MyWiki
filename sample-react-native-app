@@ -1,0 +1,75 @@
+Create a Sample React Native app with ios and android modules
+
+Pre-requisites: Follow the steps to create a sample app (https://facebook.github.io/react-native/docs/getting-started.html)
+
+This will create a project AwesomeProject
+
+Open the project in the editor which you use(vscode, sublime, atom etc)
+
+Open package.json 
+Edit the dependencies and devDependencies to have the below mentioned versions
+
+  "dependencies": {
+    "react": "^16.0.0",
+    "react-native": "^0.49.3"
+  },
+  "devDependencies": {
+    "babel-preset-react-native-stage-0": "^1.0.1",
+    "jest": "^23.0.1",
+    "jest-react-native": "^18.0.0",
+    "react-test-renderer": "16.3.1"
+  }
+  
+Replace the default .babelrc file contents with the below presets
+  
+{
+  "presets": [
+    "babel-preset-react-native-stage-0/decorator-support"
+  ],
+  "env": {
+    "development": {
+      "plugins": [
+        "transform-react-jsx-source"
+      ]
+    }
+  }
+}
+
+You could also add scripts to package.json
+
+"scripts": {
+  "start": "react-native start",
+  "android": "react-native run-android",
+  "ios": "react-native run-ios",
+  "test": "jest"
+}
+
+Open app.json file and add expo - sdk version
+
+{
+  "expo": {
+    "sdkVersion": "27.0.0"
+  },
+  "name": "cureitmobileapp",
+  "displayName": "cureitmobileapp"
+}
+
+Save these files
+
+Run the below command
+
+For ios
+
+npm run ios (if you add scripts give above) 
+    or
+react-native run-ios
+
+For android
+
+npm run android (if you add scripts give above) 
+    or
+react-native run-android
+
+This will build the respective apps and will open the app in their respective emulators.
+
+You should be able to view the app running on the emulator.
