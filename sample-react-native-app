@@ -50,8 +50,8 @@ Open app.json file and add expo - sdk version
   "expo": {
     "sdkVersion": "27.0.0"
   },
-  "name": "cureitmobileapp",
-  "displayName": "cureitmobileapp"
+  "name": "yourappname",
+  "displayName": "yourappdisplayname"
 }
 
 Save these files
